@@ -1,0 +1,23 @@
+[package]
+name = "lab5"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4"          # For timestamping memory map files
+signal-hook = "0.3"     # For handling termination signals
+rand = "0.8"
+libc = "0.2"           # For low-level system interactions (optional)
+
+
+[[bin]]
+name= "task1"
+path = "src/task1.rs"
+
+[[bin]]
+name= "task2"
+path = "src/task2.rs"
+
+[[bin]]
+name= "task3"
+path = "src/task3.rs"

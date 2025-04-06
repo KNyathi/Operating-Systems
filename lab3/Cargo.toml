@@ -1,0 +1,28 @@
+[package]
+name = "lab3"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "mutexes"
+path = "src/mutexes.rs"
+
+[[bin]]
+name = "semaphores"
+path = "src/semaphores.rs" 
+
+[[bin]]
+name = "co_variable"
+path = "src/co_variable.rs" 
+
+[[bin]]
+name = "barriers"
+path = "src/barriers.rs" 
+
+[[bin]]
+name = "signals"
+path = "src/signals.rs" 
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+signal-hook = "0.3.0"
